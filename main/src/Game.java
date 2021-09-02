@@ -3,7 +3,7 @@ import java.util.Scanner;
 import javax.swing.text.Position;
 
 public class Game {
-    // The following five constants were defined in the starter code (kt54)
+ 
     private static String FOXPLAYS_MSG      = "Fox plays. Enter move:";
     private static String GEESEPLAY_MSG     = "Geese play. Enter move:";
     private static String ILLEGALMOVE_MSG   = "Illegal move!";
@@ -13,7 +13,7 @@ public class Game {
     private Board gameBoard;
     private boolean gTurn = true;    // Starting is Guse turn. Only scenarios are guse are moving, or they are not.
 
-    // Minimal constructor. Expand as needed (kt54)
+    // Minimal constructor. Expand as needed
     public Game() {
         gameBoard = new Board();
     }
@@ -59,7 +59,7 @@ public class Game {
             int x2 = Integer.parseInt(command3);
             int y2 = Integer.parseInt(command4);
 
-            if (!moves(x1, y1, x2, y2)) {    //If moves are illegal (false), print the message
+            if (!moves(x1, y1, x2, y2)) {    // If moves are illegal (false), print the message
                 System.out.println(ILLEGALMOVE_MSG);
             } else {
             gTurn = !gTurn;    // Switch turns
@@ -81,7 +81,7 @@ public class Game {
         
         char[][] board = gameBoard.getBoard();
 
-        if (x1 < 0 || x1 >= board.length  || x2 < 0 || x2 >= board.length    // Can t go into negative coordinates, or outside the board
+        if (x1 < 0 || x1 >= board.length  || x2 < 0 || x2 >= board.length    // Can't go into negative coordinates, or outside the board
         || y1 < 0 || y1 >= board.length || y2 < 0 || y2 >= board.length) return false;
 
         if (!gTurn) {
@@ -119,7 +119,7 @@ public class Game {
     private boolean fWin() {
         for(char[] row : gameBoard.getBoard()) {
             for (char character : row) {    
-                if (character == Board.GOOSE) return false;    // no coordinate contains the character for gose
+                if (character == Board.GOOSE) return false;    // No coordinate contains the character for gose
             }
         } 
 
