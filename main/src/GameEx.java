@@ -6,7 +6,7 @@ import java.util.Scanner;
 import javax.swing.text.Position;
 
 public class GameEx {
-    // The following five constants were defined in the starter code (kt54)
+
     private static String FOXPLAYS_MSG      = "Fox plays. Enter move:";
     private static String GEESEPLAY_MSG     = "Geese play. Enter move:";
     private static String ILLEGALMOVE_MSG   = "Illegal move!";
@@ -16,7 +16,7 @@ public class GameEx {
     private BoardEx gameBoard;
     private boolean gTurn = true;    // Starting is Guse turn. Only scenarios are guse are moving, or they are not.
 
-    // Minimal constructor. Expand as needed (kt54)
+    // Minimal constructor. Expand as needed 
     public GameEx() {
         gameBoard = new BoardEx();
     }
@@ -62,7 +62,7 @@ public class GameEx {
             int x2 = Integer.parseInt(command3);
             int y2 = Integer.parseInt(command4);
 
-            if (!moves(x1, y1, x2, y2)) {    //If moves are illegal (false), print the message
+            if (!moves(x1, y1, x2, y2)) {    // If moves are illegal (false), print the message
                 System.out.println(ILLEGALMOVE_MSG);
             } else {
             gTurn = !gTurn;    // Switch turns
