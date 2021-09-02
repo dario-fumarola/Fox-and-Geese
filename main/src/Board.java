@@ -1,6 +1,6 @@
 public class Board {
 
-    // The following five constants were defined in the starter code (kt54)
+
     private static final int  BOARD_SIZE = 7;
     static final char FREE    = '.';
     static final char INVALID = ' ';
@@ -10,7 +10,7 @@ public class Board {
     private int boardsize;
     private char[][] board;
 
-    // Default constructor was provided by the starter code. Extend as needed (kt54) 
+
     public Board() {
         this.boardsize = BOARD_SIZE;
 
@@ -43,7 +43,7 @@ public class Board {
 
 
     // Prints the board. This method was provided with the starter code. Better not modify to ensure
-    // output consistent with the autochecker (kt54)
+    // output consistent with the autochecker
     public void printBoard() {
 
         for(int y=0; y<boardsize; y++)
