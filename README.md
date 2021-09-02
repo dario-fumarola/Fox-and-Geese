@@ -1,6 +1,6 @@
 # Fox-and-Geese
 
-This project makes a simple interactive version of the Fox and Geese game using Java.
+This project makes a simple interactive version of the [Fox and Geese](https://www.mastersofgames.com/rules/fox-geese-rules.htm#:~:text=Fox%20%26%20Geese%20is%20a%20game,for%20them%20to%20trap%20him.&text=The%20fox%20starts%20in%20the%20middle%20of%20the%20board). game using Java.
 
 ## Description
 
